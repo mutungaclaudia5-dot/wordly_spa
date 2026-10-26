@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wordly Dictionary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1 class="brand">Wordly</h1>
+    <button id="theme-toggle" class="ghost" type="button" aria-pressed="false">Dark theme</button>
+  </header>
+
+  <main>
+    <form id="search-form" class="search" autocomplete="off">
+      <label for="word-input" class="visually-hidden">Word to look up</label>
+      <input id="word-input" type="text" placeholder="Look up a word, e.g. serendipity" required>
+      <button type="submit" class="primary">Search</button>
+    </form>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+
+    <section id="result" class="result" hidden>
+      <div class="result-head">
+        <div>
+          <h2 id="result-word"></h2>
+          <p id="result-phonetic" class="phonetic"></p>
+        </div>
+        <div class="actions">
+          <button id="audio-btn" class="ghost" type="button" hidden>Play pronunciation</button>
+          <button id="save-btn" class="ghost" type="button">Save word</button>
+        </div>
+      </div>
+      <div id="meanings"></div>
+      <p id="source" class="source"></p>
+    </section>
+
+    <section class="saved" aria-labelledby="saved-title">
+      <h3 id="saved-title">Saved words</h3>
+      <p id="saved-empty" class="muted">Nothing saved yet. Search for a word and hit "Save word".</p>
+      <ul id="saved-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
