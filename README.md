@@ -1,4 +1,6 @@
 # Wordly Dictionary
+ 
+ live site https://mutungaclaudia5-dot.github.io/wordly_spa/
 
 A single page app for looking up English words. You type a word, and the page shows how to say it, what it means, how it's used and where the information came from, all without reloading. I built it as the final project for the second module of my software engineering course, using plain HTML, CSS and JavaScript with no frameworks or build tools.
 
