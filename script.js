@@ -156,7 +156,7 @@ function updateSaveState() {
   elements.result.classList.toggle("is-saved", saved);
 }
 
-function renderSaved() {
+function makeSaved() {
   elements.savedList.innerHTML = "";
   elements.savedEmpty.hidden = savedWords.length > 0;
 
